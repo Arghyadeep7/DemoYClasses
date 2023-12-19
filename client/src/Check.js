@@ -40,7 +40,7 @@ const Check = () => {
     setLoading(true);
 
     const response = await axios
-      .post("http://localhost:8000/check", {
+      .post("https://demoyclasses.onrender.com/check", {
         email: email,
       })
       .then((res) => res.data);
@@ -63,7 +63,7 @@ const Check = () => {
     setLoading(true);
 
     const response = await axios
-      .post("http://localhost:8000/update", {
+      .post("https://demoyclasses.onrender.com/update", {
         fname: details.fname,
         lname: details.lname,
         email: details.email,

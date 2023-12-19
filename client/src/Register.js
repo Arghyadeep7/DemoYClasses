@@ -8,7 +8,6 @@ import {
   Button,
   Toast,
   ToastContainer,
-  Badge,
 } from "react-bootstrap";
 
 import axios from "axios";
@@ -177,7 +176,7 @@ const Register = () => {
     setLoading(true);
 
     const response = await axios
-      .post("http://localhost:8000/register", {
+      .post("https://demoyclasses.onrender.com/register", {
         fname: fname.trim(),
         lname: lname.trim(),
         email: email,
