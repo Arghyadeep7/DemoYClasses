@@ -246,7 +246,7 @@ const Check = () => {
                         variant="danger"
                         disabled={loading}
                         className="m-3"
-                        // onClick={resetHandler}
+                        onClick={resetHandler}
                       >
                         Back
                       </Button>
