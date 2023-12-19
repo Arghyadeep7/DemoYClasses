@@ -97,7 +97,7 @@ const Check = () => {
 
   return (
     <div className="d-flex justify-content-center mt-5 mb-5">
-      {!submitted ? (
+      {submitted ? (
         <div className={styles.main}>
           <div className="d-flex justify-content-between">
             <h4>Check Form</h4>
@@ -149,6 +149,7 @@ const Check = () => {
               variant="primary"
               className="w-100 mb-2"
               onClick={submitHandler}
+              disabled={loading}
             >
               {loading ? "Loading..." : "Check Status"}
             </Button>
@@ -242,10 +243,18 @@ const Check = () => {
                         <option value="4">(4) 5:00 PM - 6:00 PM</option>
                       </Form.Select>
                       <Button
+                        variant="danger"
+                        disabled={loading}
+                        className="m-3"
+                        // onClick={resetHandler}
+                      >
+                        Back
+                      </Button>
+                      <Button
                         type="submit"
                         variant="primary"
                         disabled={loading}
-                        className="mb-3"
+                        className="m-3"
                       >
                         {!loading ? "PAY Rs. 500" : "Loading..."}
                       </Button>
@@ -261,13 +270,12 @@ const Check = () => {
                   Please take a print-out of this receipt
                 </div>
               )}
-              <div
-                to="/check"
-                className="mt-3 text-center fst-italic"
-                style={{ cursor: "pointer", color: "blue" }}
-                onClick={resetHandler}
-              >
-                <u>Check another form</u>
+              <div className="mt-3 text-center">
+                <Link
+                  to="/register"
+                >
+                  <h5>Fill a new form</h5>
+                </Link>
               </div>
             </Toast.Body>
           </Toast>
