@@ -97,7 +97,7 @@ const Check = () => {
 
   return (
     <div className="d-flex justify-content-center mt-5 mb-5">
-      {submitted ? (
+      {!submitted ? (
         <div className={styles.main}>
           <div className="d-flex justify-content-between">
             <h4>Check Form</h4>
