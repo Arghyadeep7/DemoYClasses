@@ -380,6 +380,7 @@ const Register = () => {
                   size="sm"
                   className="m-1"
                   onClick={clear}
+                  disabled={loading}
                 >
                   Clear Form
                 </Button>
