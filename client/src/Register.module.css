@@ -1,0 +1,18 @@
+.main{
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    padding: 1.75%;
+}
+
+@media only screen and (max-width: 1012px) {
+    .main{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .main{
+        width: 90%;
+    }
+}
