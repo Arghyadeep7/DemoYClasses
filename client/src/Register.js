@@ -176,7 +176,7 @@ const Register = () => {
     setLoading(true);
 
     const response = await axios
-      .post("https://demoyclasses.onrender.com/register", {
+      .post("https://demo-y-classes-server.vercel.app/register", {
         fname: fname.trim(),
         lname: lname.trim(),
         email: email,

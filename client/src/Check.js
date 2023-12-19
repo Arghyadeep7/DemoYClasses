@@ -40,7 +40,7 @@ const Check = () => {
     setLoading(true);
 
     const response = await axios
-      .post("https://demoyclasses.onrender.com/check", {
+      .post("https://demo-y-classes-server.vercel.app/check", {
         email: email,
       })
       .then((res) => res.data);
@@ -63,7 +63,7 @@ const Check = () => {
     setLoading(true);
 
     const response = await axios
-      .post("https://demoyclasses.onrender.com/update", {
+      .post("https://demo-y-classes-server.vercel.app/update", {
         fname: details.fname,
         lname: details.lname,
         email: details.email,
